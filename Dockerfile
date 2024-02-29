@@ -7,7 +7,7 @@
 
 FROM alpine:edge
 
-LABEL maintainer="Jozef Rebjak"
+LABEL org.opencontainers.image.authors="Jozef Rebjak <jozef@rebja.com>"
 
 ARG VERSION=2.4.1
 

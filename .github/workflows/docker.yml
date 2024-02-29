@@ -40,7 +40,7 @@ jobs:
             ${{ runner.os }}-buildx-
 
       - name: Log in to registry
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io --username ${{ github.actor }} --password-stdin
+        run: echo "${{ secrets.PAT_GITHUB_PACKAGES }}" | docker login ghcr.io --username ${{ github.actor }} --password-stdin
 
       - name: Build and push
         uses: docker/build-push-action@v2
